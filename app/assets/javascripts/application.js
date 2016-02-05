@@ -15,37 +15,50 @@
 //= require turbolinks
 //= require_tree .
 
-// SLIDER
-var currentIndex = 0,
-  items = $('.container div'),
-  itemAmt = items.length;
-
-function cycleItems() {
-  var item = $('.container div').eq(currentIndex);
-  items.hide();
-  item.css('display','inline-block');
-}
-
-var autoSlide = setInterval(function() {
-  currentIndex += 1;
-  if (currentIndex > itemAmt - 1) {
-    currentIndex = 0;
-  }
-  cycleItems();
-}, 2000);
-
-
 // hamburger menu
 $(document).ready(function() {
 
   jQuery(function($){
      $( '.menu-btn' ).click(function(){
-     $('.responsive-menu').toggleClass('expand')
+     $( '.responsive-menu' ).toggleClass('expand')
      })
   })
 
+// slideshow
+
+  $(".container > div:gt(0)").hide();
+
+  setInterval(function() { 
+    $('.container > div:first')
+      .fadeOut(3000)
+      .next()
+      .fadeIn(4000)
+      .end()
+      .appendTo('.container');
+  },  5000);
 
 });
+// // SLIDER
+// var currentIndex = 0,
+//   items = $('.container div'),
+//   itemAmt = items.length;
+
+// function cycleItems() {
+//   var item = $('.container div').eq(currentIndex);
+//   items.hide();
+//   item.css('display','inline-block');
+// }
+
+// var autoSlide = setInterval(function() {
+//   currentIndex += 1;
+//   if (currentIndex > itemAmt - 1) {
+//     currentIndex = 0;
+//   }
+//   cycleItems();
+// }, 2000);
+
+
+
 
 
 

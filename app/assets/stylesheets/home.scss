@@ -13,6 +13,7 @@ $default-black: #000000;
 
 @import 'nav';
 @import 'slider';
+@import 'footer';
 
 header {
 	background: $default-green;
@@ -25,3 +26,4 @@ header {
 	width: 10%;
 	float: right;
 }
+

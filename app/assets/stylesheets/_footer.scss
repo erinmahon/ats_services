@@ -1,0 +1,18 @@
+// COLOR PALLETE VARIBALES
+$default-orange: rgb(238,154,0);
+$default-blue: rgb(52,73,96);
+$default-red: rgb(139,58,58);
+$default-tan: rgb(255,228,181);
+$default-green: rgb(105,139,105);
+$default-white: #ffffff;
+$default-black: #000000;
+
+footer {
+	position: relative;
+	height: 100px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: $default-orange;
+	clear: both;
+	z-index: 0;
+}

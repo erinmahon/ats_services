@@ -8,19 +8,28 @@ $default-white: #ffffff;
 $default-black: #000000;
 
 // SLIDER SYTLING (NESTED)
-.slider {
-	width: 100%;
+#slider {
+	// clear: both;
+	position: relative; 
+    width: 100%; 
+    height: 100%;
+    // margin: 0;
+	z-index: -1;
 	.container {
-	  max-width: 100%;
-	  background-color: $default-black;
-	  margin: 0 auto;
-	  text-align: center;
+	  // max-width: 100%;
+	  // background-color: $default-black;
+	  // text-align: center;
+	  width: 100%;
 	  position: relative;
+	  height: 100%;
+	  margin: 0;
+	  padding: 0;
 	  div {
 	  background-color: $default-black;
 	  width: 100%;
 	  display: inline-block;
 	  display: none;
+	  position: absolute;
 	  }
 	  img {
 	  width: 100%;
@@ -29,6 +38,8 @@ $default-black: #000000;
 	  }
 	}
 }
+
+
 
 // MEDIA QUERY DEFINING SLIDER MARGIN-TOP @ PROGRESSIVE BREAK POINTS
 // .slider {
