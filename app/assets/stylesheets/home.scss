@@ -11,15 +11,19 @@ $default-green: rgb(105,139,105);
 $default-white: #ffffff;
 $default-black: #000000;
 
+@import 'bourbon';
+
+
 @import 'nav';
 @import 'slider';
 @import 'footer';
 @import 'about';
 @import 'services';
 @import 'contact';
+@import 'grid';
 
 header {
-	background: $default-green;
+	background: tint( $default-green, 10% );
 	height: 100px;
 	width: 100%;
 	margin: 0 auto;
@@ -28,9 +32,24 @@ header {
 }
 
 #logo {
-	width: 10%;
+	width: 15%;
 	float: right;
 	// position: fixed;
 	z-index: 20;
+	margin-bottom: -5%;
+	// background: tint( $default-black, 10% );
 }
 
+section {
+	@include row;
+	padding-top: 5%;
+}
+
+// .section_header {
+// 	@include col(3,5);
+// }
+
+.content_buffer {
+	@include col(1,12);
+	background: green;
+}

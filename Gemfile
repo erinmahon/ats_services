@@ -16,6 +16,8 @@ gem 'coffee-rails', '~> 4.1.0'
 
 #Add bootstrap for responsive design
 gem 'bootstrap-sass'
+# Add bourbon gem to import sass library
+gem 'bourbon'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
