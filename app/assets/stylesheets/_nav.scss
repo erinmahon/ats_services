@@ -1,0 +1,83 @@
+// COLOR PALLETE VARIBALES
+$default-orange: rgb(238,154,0);
+$default-blue: rgb(52,73,96);
+$default-red: rgb(139,58,58);
+$default-tan: rgb(255,228,181);
+$default-green: rgb(105,139,105);
+$default-white: #ffffff;
+$default-black: #000000;
+
+// FONT VARIABLE
+$font-stack: Helvetica, sans-serif;
+
+// NESTED NAV STYLING
+nav {
+	text-decoration: none;
+	text-transform: uppercase;
+	font: 110% $font-stack;
+	position: fixed;
+	z-index: 1;
+	margin: 1%;
+	li {
+		display: inline-block;
+  		position: relative;
+  		a {
+  			color: $default-white;
+      		display: block;
+      		text-decoration: none;
+      	&:hover { background: $default-tan; color: $default-green; text-decoration: none; }
+  		}
+	}
+	ul {
+		list-style: none;
+      	top: 100%;
+     	background: $default-blue;
+      	padding: 5px;
+		li {
+			a {
+				color: $default-white;
+       			display: block;
+        		padding: 8px 10px;
+        		text-decoration: none;
+			}
+        	&:hover { 
+        		background: $default-blue; 
+        		color: $default-white; 
+        	}
+        }
+    }
+    &.is-selected {
+    	a { 
+    		background: $default-blue; 
+    		color: $default-white; 
+    	}
+    	ul { 
+    		display: block; 
+    	}
+	}
+}
+
+// /*hamburger dropdown menu */
+
+.menu-btn span {
+	display: block;
+	width: 50px;
+	height: 6px;
+	margin: 4px 0;
+	background: $default-tan;
+	z-index: 99;
+}
+
+
+.responsive-menu{
+	display: none;
+}
+
+.expand {
+	display: block !important; 
+}
+.mobile-nav {
+	float: left;
+	opacity: 0.9;
+}
+

@@ -14,3 +14,16 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+// hamburger menu
+$(document).ready(function() {
+
+  jQuery(function($){
+     $( '.menu-btn' ).click(function(){
+     $('.responsive-menu').toggleClass('expand')
+     })
+  })
+
+
+});
