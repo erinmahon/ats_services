@@ -14,16 +14,23 @@ $default-black: #000000;
 @import 'nav';
 @import 'slider';
 @import 'footer';
+@import 'about';
+@import 'services';
+@import 'contact';
 
 header {
 	background: $default-green;
 	height: 100px;
 	width: 100%;
 	margin: 0 auto;
+	position: fixed;
+	z-index: 15;
 }
 
 #logo {
 	width: 10%;
 	float: right;
+	// position: fixed;
+	z-index: 20;
 }
 
