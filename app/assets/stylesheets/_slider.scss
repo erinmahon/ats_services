@@ -1,0 +1,54 @@
+// COLOR PALLETE VARIBALES
+$default-orange: rgb(238,154,0);
+$default-blue: rgb(52,73,96);
+$default-red: rgb(139,58,58);
+$default-tan: rgb(255,228,181);
+$default-green: rgb(105,139,105);
+$default-white: #ffffff;
+$default-black: #000000;
+
+// SLIDER SYTLING (NESTED)
+.slider {
+	width: 100%;
+	.container {
+	  max-width: 100%;
+	  background-color: $default-black;
+	  margin: 0 auto;
+	  text-align: center;
+	  position: relative;
+	  div {
+	  background-color: $default-black;
+	  width: 100%;
+	  display: inline-block;
+	  display: none;
+	  }
+	  img {
+	  width: 100%;
+	  height: auto;
+	  opacity: 0.8;
+	  }
+	}
+}
+
+// MEDIA QUERY DEFINING SLIDER MARGIN-TOP @ PROGRESSIVE BREAK POINTS
+// .slider {
+//   @media only screen and (max-width: 768px) {
+//     padding-top: 10%;
+//   }
+//   @media only screen and (max-width: 550px) {
+//     padding-top: 15%;
+//   }
+//   @media only screen and (max-width: 500px) {
+//     padding-top: 16%;
+//   }
+//   @media only screen and (max-width: 450px) {
+//     padding-top: 18%;
+//   }
+//   @media only screen and (max-width: 400px) {
+//     padding-top: 20%;
+//   }
+//    @media only screen and (max-width: 350px) {
+//     padding-top: 25%;
+//   }
+
+// }
