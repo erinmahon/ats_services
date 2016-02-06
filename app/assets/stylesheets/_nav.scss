@@ -20,6 +20,7 @@ nav {
 	margin: 1%;
   @media only screen and (max-width: 768px) {
             margin-top: 5%;
+            height: 50px;
           }
 	li {
 		display: inline-block;
@@ -28,7 +29,7 @@ nav {
   			color: $default-white;
       		display: block;
       		text-decoration: none;
-      	&:hover { background: $default-tan; color: $default-green; text-decoration: none; }
+      	&:hover { background: $default-tan; color: $default-blue; text-decoration: none; }
   		}
 	}
 	ul {
@@ -36,6 +37,12 @@ nav {
       	top: 100%;
      	  background: $default-blue;
       	padding: 2px;
+        // margin-left: 20%;
+        width: 100%;
+        text-align: center;
+        font: 80% $font-stack;
+        margin-left: 20%;
+        // margin-top: -10%;
 		li {
 			a {
 				color: $default-white;
@@ -85,6 +92,9 @@ nav {
 }
 .expand {
 	display: block !important; 
+  
+  // width: 30%;
+
 }
 .mobile-nav {
 	float: left;

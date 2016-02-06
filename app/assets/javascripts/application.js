@@ -45,7 +45,7 @@ jQuery(document).ready(function ($) {
 			$('#logo').css({
 			width: '10%',
 			float: 'right',
-			margin: '0% 2%'
+			margin: '0% 2% -5% 0%'
 			});
 
 		}
@@ -65,8 +65,9 @@ jQuery(document).ready(function ($) {
 $(document).ready(function() {
 
   jQuery(function($){
-     $( '.menu-btn' ).click(function(){
-     $( '.responsive-menu' ).toggleClass('expand')
+    $( '.menu-btn' ).click(function(){
+     	$( '.responsive-menu' )
+     		.toggleClass('expand')
      })
   })
 
@@ -74,25 +75,28 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-		$('.welcome_message')
-		  .fadeIn(3000)
-		  .show(1000)
-		  .fadeOut(2000)
-		  
+	$('.welcome_message')
+	  .fadeIn(3000)
+	  // .fadeOut(3000) 
 	})
+
 	
   $(".container > div:gt(0)").hide();
 
   setInterval(function() { 
     $('.container > div:first')
-      .fadeOut(1000)
+      .fadeOut(5000)
       .next()
-      .fadeIn(1000)
+      .fadeIn(5000)
       .end()
       .appendTo('.container');
-  },  5000);
-
+  },  3000);
+    $('.slider_caption')
+       .delay(3000)
+       .show(3000);
 });
+
+
 
 
 

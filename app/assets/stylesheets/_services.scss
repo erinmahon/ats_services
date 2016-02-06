@@ -1,8 +1,46 @@
+// COLOR PALLETE VARIBALES
+$default-orange: rgb(238,154,0);
+$default-blue: rgb(52,73,96);
+$default-red: rgb(139,58,58);
+$default-tan: rgb(255,228,181);
+$default-green: rgb(105,139,105);
+$default-white: #ffffff;
+$default-black: #000000;
+
+@import 'grid';
+
+$font-stack: Helvetica, sans-serif;
+
 #services {
-	background: yellow;
-	height: 1000px;
+	margin-top: 5%;
+	background: tint( $default-black, 30% );
+	height: 100%;
 	position: relative;
 	clear: both;
+	padding: 10%;
 	// margin-top: 45%;
 	z-index: 0;
+	.services_list {
+		background: $default-white;
+		@include col(10,12);
+		color: black;
+		ul {
+			text-transform: uppercase;
+			font: 200% $font-stack;
+			letter-spacing: 0.15em;
+			text-align: center;
+			li {
+				list-style-type: none;
+			}
+		}
+		.section_header {
+			@extend ul; 
+			color: $default-white;
+			background: $default-orange;
+		}
+
+	}
+
 }
+
+

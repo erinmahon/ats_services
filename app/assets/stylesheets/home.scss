@@ -30,7 +30,7 @@ body {
 	background: tint( $default-black, 30% );
 }
 header {
-	background: tint( $default-green, 10% );
+	background: $default-green;
 	height: 100px;
 	width: 100%;
 	margin: 0 auto;
@@ -60,18 +60,19 @@ header {
 
 section {
 	@include row;
-	padding-top: 5%;
+	padding-top: 10%;
 	font-size: 1em;
+	// margin-top: 5%;
 }
 
 .welcome_message {
 	position: relative;
 	// border: 5px solid black;
-	height: 200px;
+	height: 100px;
 	width: 100%;
 	// margin-top: 2%;
 	color: blue;
-	background: tint( $default-black, 10% );
+	background: tint( $default-orange, 10% );
 	z-index: 5;
 	padding: 2%;
 	display: none;
@@ -99,4 +100,33 @@ section {
 .content_buffer {
 	@include col(1,12);
 	background: green;
+}
+
+.slider_caption {
+	@include col(10,12);
+	clear: both;
+	position: relative;
+	margin-top: 30%;
+	background: rgba( $default-orange, .8 );
+	width: 80%;
+	margin-left: 10%;
+	display: none;
+	z-index: 10;
+	height: 100%;
+	box-shadow: 0px 0px 5px #fff;
+	padding: 2%;
+	border: 4px solid black;
+	// @media only screen and (max-width: 768px) {
+ //    	display: hidden;
+ //  	}
+ 	h1 {
+		text-transform: uppercase;
+		letter-spacing: 0.15em;
+		font: 160% $font-stack;
+		color: white;
+		text-align: center;
+ 	}
+ 	p {
+ 		font: 100% $font-stack;
+ 	}
 }

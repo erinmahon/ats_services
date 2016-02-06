@@ -11,17 +11,18 @@ $default-black: #000000;
 
 #about {
 	background: tint( $default-black, 10% );
-	height: 1000px;
+	height: 100%;
 	position: relative;
 	clear: both;
-	margin-top: 45%;
+	// margin-top: 20%;
 	z-index: 0;
+	padding: 10%;
 }
 .about_us {
-	@include col(6,12);
+	@include col(4,12);
 	background: white;
 }
 .faqs {
 	background: orange;
-	@include col(3,12);
+	@include col(5,12);
 }
