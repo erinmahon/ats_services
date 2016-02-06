@@ -72,6 +72,15 @@ $(document).ready(function() {
 
 // slideshow
 
+
+$(document).ready(function() {
+		$('.welcome_message')
+		  .fadeIn(3000)
+		  .show(1000)
+		  .fadeOut(2000)
+		  
+	})
+	
   $(".container > div:gt(0)").hide();
 
   setInterval(function() { 
