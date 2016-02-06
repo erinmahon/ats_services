@@ -11,6 +11,10 @@ $default-green: rgb(105,139,105);
 $default-white: #ffffff;
 $default-black: #000000;
 
+
+// FONT VARIABLE
+$font-stack: Helvetica, sans-serif;
+
 @import 'bourbon';
 
 
@@ -22,21 +26,37 @@ $default-black: #000000;
 @import 'contact';
 @import 'grid';
 
+body {
+	background: tint( $default-black, 10% );
+}
+
 header {
-	background: tint( $default-green, 10% );
+	background: tint( $default-black, 10% );
 	height: 100px;
 	width: 100%;
 	margin: 0 auto;
 	position: fixed;
 	z-index: 15;
+	@media only screen and (max-width: 768px) {
+    	height: 65px;
+  	}
+  	.quick_contact {
+  		width: 100%;
+  		height: 25px;
+  		z-index: 5;
+  		background: tint( $default-blue, 10% );
+  	}
+
 }
+
 
 #logo {
 	width: 15%;
-	float: right;
+	float: left;
 	// position: fixed;
 	z-index: 20;
-	margin-bottom: -5%;
+	margin-left: 40%;
+	// height: 80%;
 	// background: tint( $default-black, 10% );
 }
 

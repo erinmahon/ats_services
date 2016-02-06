@@ -18,6 +18,9 @@ nav {
 	position: fixed;
 	z-index: 1;
 	margin: 1%;
+  @media only screen and (max-width: 768px) {
+            margin-top: 5%;
+          }
 	li {
 		display: inline-block;
   		position: relative;
@@ -31,8 +34,8 @@ nav {
 	ul {
 		list-style: none;
       	top: 100%;
-     	background: $default-blue;
-      	padding: 5px;
+     	  background: $default-blue;
+      	padding: 2px;
 		li {
 			a {
 				color: $default-white;
@@ -44,11 +47,14 @@ nav {
         		background: $default-blue; 
         		color: $default-white; 
         	}
+          @media only screen and (max-width: 768px) {
+            font: 70% $font-stack;
+          }
         }
     }
     &.is-selected {
     	a { 
-    		background: $default-blue; 
+    		background: $default-tan; 
     		color: $default-white; 
     	}
     	ul { 
@@ -58,6 +64,13 @@ nav {
 }
 
 // /*hamburger dropdown menu */
+
+.menu {
+  color: $default-white;
+  @media only screen and (max-width: 768px) {
+            display: none;
+          }
+}
 
 .menu-btn span {
 	display: block;

@@ -1,7 +1,16 @@
+// COLOR PALLETE VARIBALES
+$default-orange: rgb(238,154,0);
+$default-blue: rgb(52,73,96);
+$default-red: rgb(139,58,58);
+$default-tan: rgb(255,228,181);
+$default-green: rgb(105,139,105);
+$default-white: #ffffff;
+$default-black: #000000;
+
 @import 'grid';
 
 #about {
-	background: black;
+	background: tint( $default-black, 10% );
 	height: 1000px;
 	position: relative;
 	clear: both;
@@ -12,7 +21,7 @@
 	@include col(6,12);
 	background: white;
 }
-.side_bar {
+.faqs {
 	background: orange;
 	@include col(3,12);
 }

@@ -42,6 +42,12 @@ jQuery(document).ready(function ($) {
 				position : 'fixed',
 				top : '0'
 			});
+			$('#logo').css({
+			width: '10%',
+			float: 'right',
+			margin: '0% 2%'
+			});
+
 		}
 		if($(window).scrollTop() < scrollTop){
 			$('nav').removeAttr('style');	
@@ -54,7 +60,7 @@ jQuery(document).ready(function ($) {
          $(this).addClass('active');
     });
 })
-
+		
 // hamburger menu
 $(document).ready(function() {
 
