@@ -10,19 +10,26 @@ $default-black: #000000;
 @import 'grid';
 
 #about {
-	background: tint( $default-black, 10% );
+	background: tint( $default-blue, 10% );
 	height: 100%;
 	position: relative;
 	clear: both;
 	// margin-top: 20%;
 	z-index: 0;
-	padding: 10%;
+	// padding: 10%;
 }
 .about_us {
 	@include col(4,12);
 	background: white;
 }
+.business {
+	@include col(7,12);
+}
 .faqs {
-	background: orange;
-	@include col(5,12);
+	background: $default-tan;
+	@include col(12,12);
+}
+
+.profile {
+	width: 100%;
 }

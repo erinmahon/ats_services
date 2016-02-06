@@ -27,7 +27,7 @@ $font-stack: Helvetica, sans-serif;
 @import 'grid';
 
 body {
-	background: tint( $default-black, 30% );
+	// background: tint( $default-black, 30% );
 }
 header {
 	background: $default-green;
@@ -40,10 +40,35 @@ header {
     	height: 65px;
   	}
   	.quick_contact {
-  		width: 100%;
-  		height: 25px;
+  		text-align: center;
+  		clear: both;
+  		width: 13%;
+  		height: auto;
   		z-index: 5;
-  		background: tint( $default-blue, 10% );
+  		background: rgba( $default-red, .7);
+  		text-transform: uppercase;
+  		font: 100% $font-stack;
+  		letter-spacing: 0.05em;
+  		padding: 0.5%;
+  		margin-top: 10%;
+  		h4 {
+  			padding: 1%;
+  			color: $default-white;
+  		}
+  		ul {
+  			list-style-type: none;
+  			text-align: left;
+  			padding: 1%;
+  			li {
+  				text-decoration: none;
+  				display: block;
+  				font: 90% $font-stack;
+  				text-indent: none;
+  				a {
+  					text-decoration: none;
+  				}
+  			}
+  		}
   	}
 
 }
@@ -59,10 +84,21 @@ header {
 }
 
 section {
+	clear: both;
 	@include row;
-	padding-top: 10%;
+	padding-top: 5%;
 	font-size: 1em;
 	// margin-top: 5%;
+}
+
+.section_header {
+	color: $default-white;
+	background: $default-orange;
+	text-transform: uppercase;
+	font: 170% $font-stack;
+	letter-spacing: 0.15em;
+	text-align: center;
+	color: $default-white;
 }
 
 .welcome_message {
@@ -102,31 +138,41 @@ section {
 	background: green;
 }
 
-.slider_caption {
-	@include col(10,12);
-	clear: both;
+// .slider_caption {
+// 	@include col(10,12);
+// 	clear: both;
+// 	position: relative;
+// 	margin-top: 25%;
+// 	background: rgba( $default-orange, .8 );
+// 	width: 80%;
+// 	margin-left: 10%;
+// 	display: none;
+// 	z-index: 10;
+// 	height: 100%;
+// 	box-shadow: 0px 0px 5px #fff;
+// 	padding: 2%;
+// 	border: 4px solid black;
+// 	// @media only screen and (max-width: 768px) {
+//  //    	display: hidden;
+//  //  	}
+//  	h1 {
+// 		text-transform: uppercase;
+// 		letter-spacing: 0.15em;
+// 		font: 160% $font-stack;
+// 		color: white;
+// 		text-align: center;
+//  	}
+//  	p {
+//  		font: 100% $font-stack;
+//  	}
+// }
+
+.background {
+	width: 100%;
+	height: 300px;
+}
+
+.parallax {
+	z-index: 0;
 	position: relative;
-	margin-top: 30%;
-	background: rgba( $default-orange, .8 );
-	width: 80%;
-	margin-left: 10%;
-	display: none;
-	z-index: 10;
-	height: 100%;
-	box-shadow: 0px 0px 5px #fff;
-	padding: 2%;
-	border: 4px solid black;
-	// @media only screen and (max-width: 768px) {
- //    	display: hidden;
- //  	}
- 	h1 {
-		text-transform: uppercase;
-		letter-spacing: 0.15em;
-		font: 160% $font-stack;
-		color: white;
-		text-align: center;
- 	}
- 	p {
- 		font: 100% $font-stack;
- 	}
 }

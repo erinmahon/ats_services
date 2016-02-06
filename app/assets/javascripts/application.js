@@ -15,6 +15,8 @@
 //= require turbolinks
 //= require_tree .
 
+
+
 //Page Scroll
 jQuery(document).ready(function ($) {
 	 $('a[href*="#"]:not([href="#"])').click(function() {
@@ -32,6 +34,8 @@ jQuery(document).ready(function ($) {
 		}
 	});
 });
+
+
 
 // Fixed Nav
 jQuery(document).ready(function ($) {
@@ -73,27 +77,48 @@ $(document).ready(function() {
 
 // slideshow
 
+// SLIDER
+var currentIndex = 0,
+  items = $('.container div'),
+  itemAmt = items.length;
 
-$(document).ready(function() {
-	$('.welcome_message')
-	  .fadeIn(3000)
-	  // .fadeOut(3000) 
-	})
+function cycleItems() {
+  var item = $('.container div').eq(currentIndex);
+  items.hide();
+  item.css('display','inline-block');
+}
+
+var autoSlide = setInterval(function() {
+  currentIndex += 1;
+  if (currentIndex > itemAmt - 1) {
+    currentIndex = 0;
+  }
+  cycleItems();
+}, 2000);
+
+
+
+
+// $(document).ready(function() {
+// 	$('.welcome_message')
+// 	  .fadeIn(3000)
+// 	  // .fadeOut(3000) 
+// 	})
 
 	
-  $(".container > div:gt(0)").hide();
+//   $(".container > div:gt(0)").hide();
 
-  setInterval(function() { 
-    $('.container > div:first')
-      .fadeOut(5000)
-      .next()
-      .fadeIn(5000)
-      .end()
-      .appendTo('.container');
-  },  3000);
-    $('.slider_caption')
-       .delay(3000)
-       .show(3000);
+//   setInterval(function() { 
+//     $('.container > div:first')
+//       .fadeOut(5000)
+//       .next()
+//       .fadeIn(5000)
+//       .end()
+//       .appendTo('.container');
+//   },  3000);
+//     $('.slider_caption')
+//        .delay(3000)
+//        .show(3000);
 });
 
 
