@@ -16,7 +16,9 @@ $default-orange: rgb(238,154,0);
 
 // FONT VARIABLE
 $font-stack: 'Abel', sans-serif;
-$font-heading: 'Open Sans Condensed', sans-serif;
+$font-header: 'Open Sans Condensed', sans-serif;
+$font-script: 'Bad Script', cursive;
+
 
 @import 'bourbon';
 
@@ -95,7 +97,7 @@ header {
 
 section {
 	clear: both;
-	@include row;
+	// @include row;
 	// padding-top: 5%;
 	font-size: 1em;
 	// margin-top: 5%;
@@ -129,4 +131,22 @@ section {
 	letter-spacing: 0.2em;
 	padding: 1%;
 	// box-shadow: 0px 0px 50px #;
+}
+
+h1 {
+	text-transform: uppercase;
+	font: 325% $font-header;
+	text-align: center;
+	font-weight: bold;
+	margin: 0;
+	color: $default-gray;
+	// background: rgba( $default-gray, .8 );
+	margin: 1%;
+	letter-spacing: 0.28em;
+
+}
+
+hr {
+	margin: 1%;
+	
 }

@@ -9,12 +9,13 @@ $default-black: #000000;
 $default-orange: rgb(238,154,0);
 
 @import 'grid';
-@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
 
 $font-stack: 'Amaranth', sans-serif;
-$font-header: 'Bad Script', cursive;
+$font-script: 'Bad Script', cursive;
+
 
 #services {
+	@include row;
 	clear: both;
 	margin-top: 20%;
 	background: $default-white;

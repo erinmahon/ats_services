@@ -17,6 +17,7 @@ $default-orange: rgb(238,154,0);
 $font-stack: 'Abel', sans-serif;
 
 #about {
+	@include row;
 	// background: tint( $default-blue, 10% );
 	// height: 100%;
 	position: relative;
@@ -34,7 +35,7 @@ $font-stack: 'Abel', sans-serif;
 .business {
 	@include col(12,12);
 	// @include row;
-	padding: 2%;
+	// padding: 2%;
 	background: $default-white;
 }
 

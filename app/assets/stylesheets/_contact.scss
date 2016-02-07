@@ -1,18 +1,21 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 // COLOR PALLETE VARIBALES
-$default-orange: rgb(238,154,0);
+$default-green: #0e8441;
+$default-dark-green: #193f1d;
+$default-gray: #231f20;
 $default-blue: rgb(52,73,96);
-$default-red: rgb(139,58,58);
-$default-tan: rgb(255,228,181);
-$default-green: rgb(105,139,105);
+$default-yellow: #ffd800;
 $default-white: #ffffff;
 $default-black: #000000;
+$default-orange: rgb(238,154,0);
 
 @import 'grid';
 
 // FONT VARIABLE
 $font-stack: 'Abel', sans-serif;
+$font-header: 'Open Sans Condensed', sans-serif;
+$font-script: 'Bad Script', cursive;
 
 #contact {
 	@include row;
@@ -49,4 +52,23 @@ form {
 .contact_logo {
 	width: 50%;
 	margin-left: 25%;
+}
+
+.section_header {
+	height: 100%;
+	background: $default-dark-green;
+	font: 250% $font-header;
+	color: $default-white;
+	z-index: 100;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	padding: 1%;
+	// box-shadow: 0px 0px 50px #;
+}
+
+.call_to_action {
+	font: 300% $font-script;
+	text-align: center;
 }
