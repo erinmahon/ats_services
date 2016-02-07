@@ -1,11 +1,14 @@
 // COLOR PALLETE VARIBALES
-$default-orange: rgb(238,154,0);
+
+$default-green: #0e8441;
+$default-dark-green: #193f1d;
+$default-gray: #231f20;
 $default-blue: rgb(52,73,96);
-$default-red: rgb(139,58,58);
-$default-tan: rgb(255,228,181);
-$default-green: rgb(105,139,105);
+$default-yellow: #ffd800;
 $default-white: #ffffff;
 $default-black: #000000;
+$default-orange: rgb(238,154,0);
+
 
 @import 'grid';
 @import 'gallery';
@@ -14,7 +17,7 @@ $default-black: #000000;
 $font-stack: Helvetica, sans-serif;
 
 #about {
-	background: tint( $default-blue, 10% );
+	// background: tint( $default-blue, 10% );
 	height: 100%;
 	position: relative;
 	clear: both;
@@ -25,45 +28,40 @@ $font-stack: Helvetica, sans-serif;
 	box-shadow: 0px 0px 110px #000;
 }
 .about_us {
-	@include col(10,12);
+	@include col(12,12);
 	background: white;
 }
 .business {
-	@include col(10,12);
+	@include col(12,12);
 	padding: 2%;
 	background: $default-white;
 }
-.faqs {
-	border: 3px solid $default-tan;
-	@include col(3,12);
-	// float: left;
-}
 
-.profile {
-	width: 45%;
-	float: left;
-	margin-right: 2%;
-}
+// .profile {
+// 	width: 45%;
+// 	float: left;
+// 	margin-right: 2%;
+// }
 
-blockquote {
-	font: 110% $font-stack;
-	background: tint( $default-tan, 70% );
-	color: $default-blue;
-	padding: 2%;
-	border: 4px solid black;
-	box-shadow: 0px 0px 5px #000;
-	letter-spacing: 0.1em;
-	width: 90%;
-	border-radius: 25px;
-}
+// blockquote {
+// 	font: 110% $font-stack;
+// 	background: tint( $default-tan, 70% );
+// 	color: $default-blue;
+// 	padding: 2%;
+// 	border: 4px solid black;
+// 	box-shadow: 0px 0px 5px #000;
+// 	letter-spacing: 0.1em;
+// 	width: 90%;
+// 	border-radius: 25px;
+// }
 
 .intro_info {
-	color: $default-green;
-	font: 135% $font-stack;
+	color: $default-blue;
+	font: 110% $font-stack;
 	font-weight: lighter;
-	margin: 0% 10%;
-	background: $default-blue;
-	padding: 2%;
+	// marg in: 0% 10%;
+	// background: $default-blue;
+	// padding: 2%;
 }
 
 .bold {
@@ -101,17 +99,17 @@ p {
 }
 
 
-.section_header {
-	text-transform: uppercase;
-	font: 160% $font-stack;
-	letter-spacing: 0.15em;
-	text-align: center;
-	color: $default-orange;
-	color: $default-white;
-	background: $default-orange;
-	font: 200% $font-stack;
-	padding: 1% 0%;
-}
+// .section_header {
+// 	text-transform: uppercase;
+// 	font: 160% $font-stack;
+// 	letter-spacing: 0.15em;
+// 	text-align: center;
+// 	color: $default-orange;
+// 	color: $default-white;
+// 	background: $default-orange;
+// 	font: 200% $font-stack;
+// 	padding: 1% 0%;
+// }
 
 .content_buffer {
 	@include col(1,12);

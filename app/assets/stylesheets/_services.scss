@@ -1,11 +1,12 @@
 // COLOR PALLETE VARIBALES
-$default-orange: rgb(238,154,0);
+$default-green: #0e8441;
+$default-dark-green: #193f1d;
+$default-gray: #231f20;
 $default-blue: rgb(52,73,96);
-$default-red: rgb(139,58,58);
-$default-tan: rgb(255,228,181);
-$default-green: rgb(105,139,105);
+$default-yellow: #ffd800;
 $default-white: #ffffff;
 $default-black: #000000;
+$default-orange: rgb(238,154,0);
 
 @import 'grid';
 
@@ -14,59 +15,51 @@ $font-stack: Helvetica, sans-serif;
 #services {
 	clear: both;
 	margin-top: 20%;
-	background: tint( $default-black, 30% );
+	background: $default-white;
+	box-shadow: 0px 0px 110px #000;
 	// height: 100%;
-	position: relative;
+	// position: relative;
 	// clear: both;
-	padding: 5%;
+	// padding: 5%;
 	// margin-top: 45%;
 	z-index: 1;
 	width: 100%;
-	box-shadow: 0px 0px 110px #000;
 	.services_list {
-		background: $default-white;
+		// background: $default-white;
 		@include col(12,12);
 		color: black;
-		border: 2px solid black;
-		box-shadow: 0px 0px 5px #000;
+		// border: 2px solid black;
+		// box-shadow: 0px 0px 5px #000;
 		ul {
 			text-transform: uppercase;
-			font: 160% $font-stack;
+			font: 130% $font-stack;
 			letter-spacing: 0.15em;
 			text-align: center;
-			color: $default-orange;
+			color: $default-white;
 			li {
 				list-style-type: none;
-				border: 2px solid black;
+				border: 5px solid $default-blue;
 				width: 20%;
 				float: left;
 				height: 300px;
 				padding: 2%;
 				margin: 2%;
-				background: $default-blue;
-				box-shadow: 0px 0px 5px #fff;
-				// box-shadow: 0px 0px 10px #000;
+				background: rgba( $default-gray, 1);
+				box-shadow: 0px 0px 5px #000;
 			}
 			.smaller {
 				font: 50% $font-stack;
 				letter-spacing: .05em;
 			}
 		}
-		.section_header {
-			@extend ul; 
-			color: $default-white;
-			background: $default-orange;
-			font: 200% $font-stack;
-			padding: 0.75% 0%;
-		}
 
 	}
-
 }
 .symbol {
 	width: 100%;
 	// max-height: 100%;
 	padding: 10%;
 }
+
 
 

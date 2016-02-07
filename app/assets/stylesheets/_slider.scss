@@ -1,16 +1,16 @@
 // COLOR PALLETE VARIBALES
-$default-orange: rgb(238,154,0);
+$default-green: #0e8441;
+$default-dark-green: #193f1d;
+$default-gray: #231f20;
 $default-blue: rgb(52,73,96);
-$default-red: rgb(139,58,58);
-$default-tan: rgb(255,228,181);
-$default-green: rgb(105,139,105);
+$default-yellow: #ffd800;
 $default-white: #ffffff;
 $default-black: #000000;
 
 // SLIDER SYTLING (NESTED)
 
 #home {
-	padding-top: 5%;
+	// padding-top: 5%;
 }
 .slider {
 	clear: both;
@@ -39,7 +39,7 @@ $default-black: #000000;
 	  img {
 	  width: 100%;
 	  // height: auto;
-	  opacity: 0.9;
+	  opacity: 0.75;
 	  height: auto;
 	  }
 	}
