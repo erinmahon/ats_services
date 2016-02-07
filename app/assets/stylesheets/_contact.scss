@@ -9,15 +9,44 @@ $default-green: rgb(105,139,105);
 $default-white: #ffffff;
 $default-black: #000000;
 
+@import 'grid';
 
 // FONT VARIABLE
 $font-stack: 'Abel', sans-serif;
 
 #contact {
-	background: $default-green;
+	@include row;
+	// background: $default-green;
 	height: 100%;
 	position: relative;
 	clear: both;
 	// margin-top: 45%;
 	z-index: 0;
+}
+
+// FONT VARIABLE
+$font-stack: Helvetica, sans-serif;
+
+// FORM STYLING
+form {
+	input {
+		text-transform: uppercase;
+		letter-spacing: .15em;
+		font: 80% $font-stack;
+		margin-top: 1%;
+		padding: 1%;
+		display: inline-block;
+	}
+}
+
+.contact_info {
+	@include col(2,5);
+}
+.contact_form {
+	@include col(3,5);
+}
+
+.contact_logo {
+	width: 50%;
+	margin-left: 25%;
 }

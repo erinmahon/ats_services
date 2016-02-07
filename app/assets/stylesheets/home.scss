@@ -13,8 +13,10 @@ $default-black: #000000;
 $default-orange: rgb(238,154,0);
 
 
+
 // FONT VARIABLE
 $font-stack: 'Abel', sans-serif;
+$font-heading: 'Open Sans Condensed', sans-serif;
 
 @import 'bourbon';
 
@@ -42,59 +44,27 @@ header {
 	@media only screen and (max-width: 768px) {
     	height: 65px;
   	}
-// .quick_contact {
-// 	background-image: url('stump_logo.png');
-// 	height: auto;
-// 	width: 10%;
-// 	z-index: 50;
-// 	position: fixed;
-// }
-// [class*="quick_contact"] {
-//   height: 50vh;
-
-//   text-indent: -9999px;
-
-//   /* fix background */
-//   background-attachment: fixed;
-
-//   /* center it */
-//   background-position: center center;
-
-//   /* Scale it nicely to the element */
-//   background-size: cover;
-
-//   /* just make it look a bit better ;) */
-//   &:nth-child(2n) {
-//     box-shadow: inset 0 0 1em #111;
-//   }
-// }
 
 #quick_contact {
-	width: 100%;
+	height: 100%;
+	float: right;
 
 }
 .quick_contact {
-	position: fixed;
+	position: relative;
+	float: right;
 	width: 10%;
 	height: auto;
-	// z-index: 50;
-	// background-image: url('stump_logo.png');
-	background-attachment: fixed;
- 	 /* center it */
- 	background-position: center center;
- 	 /* Scale it nicely to the element */
- 	background-size: cover;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	// padding: 1%;
-	margin-top: 10%;
-	color: $default-white;
+	// margin-top: 10%;
+	color: $default-yellow;
 	font-weight: bold;
 	ul {
 		list-style-type: none;
 		text-align: center;
 		// padding: 1%;
-		background: rgba( $default-yellow, .8 );
+		// background: rgba( $default-yellow, .8 );
 		width: 100%;
 		text-indent: none;
 		padding: 1%;
@@ -129,89 +99,13 @@ section {
 	// padding-top: 5%;
 	font-size: 1em;
 	// margin-top: 5%;
+	// box-shadow: 0px 0px 110px #000;
 }
-
-h1 {
-.section_header {
-	color: $default-dark-green;
-	background: $default-black;
-	border: 14px solid $default-dark-green;
-	height: 100px;
-	text-transform: uppercase;
-	font: 180% $font-stack;
-	letter-spacing: 0.15em;
-	text-align: center;
-	z-index: 10;
-	}
-}
-
-
-
-// .welcome_message {
-// 	position: relative;
-// 	// border: 5px solid black;
-// 	height: 100px;
-// 	width: 100%;
-// 	// margin-top: 2%;
-// 	color: blue;
-// 	background: tint( $default-orange, 10% );
-// 	z-index: 5;
-// 	padding: 2%;
-// 	display: none;
-// 	h1 {
-// 		color: white;
-// 		font: 160% $font-stack;
-// 		z-index: 50;
-// 		text-transform: uppercase;
-// 		letter-spacing: 0.15em;
-// 		font-weight: lighter;
-// 	}
-// 	h2 {
-// 		@extend h1;
-// 		font: 140% $font-stack;
-// 	}
-// 	.intro {
-// 		width: 40%;
-// 	}
-// }
-
-// .section_header {
-// 	@include col(3,5);
-// }
 
 .content_buffer {
 	@include col(1,12);
 	background: green;
 }
-
-// .slider_caption {
-// 	@include col(10,12);
-// 	clear: both;
-// 	position: relative;
-// 	margin-top: 25%;
-// 	background: rgba( $default-orange, .8 );
-// 	width: 80%;
-// 	margin-left: 10%;
-// 	display: none;
-// 	z-index: 10;
-// 	height: 100%;
-// 	box-shadow: 0px 0px 5px #fff;
-// 	padding: 2%;
-// 	border: 4px solid black;
-// 	// @media only screen and (max-width: 768px) {
-//  //    	display: hidden;
-//  //  	}
-//  	h1 {
-// 		text-transform: uppercase;
-// 		letter-spacing: 0.15em;
-// 		font: 160% $font-stack;
-// 		color: white;
-// 		text-align: center;
-//  	}
-//  	p {
-//  		font: 100% $font-stack;
-//  	}
-// }
 
 .background {
 	width: 100%;
@@ -234,4 +128,5 @@ h1 {
 	font-weight: bold;
 	letter-spacing: 0.2em;
 	padding: 1%;
+	// box-shadow: 0px 0px 50px #;
 }
