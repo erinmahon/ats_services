@@ -14,7 +14,7 @@ $default-orange: rgb(238,154,0);
 
 
 // FONT VARIABLE
-$font-stack: Helvetica, sans-serif;
+$font-stack: 'Abel', sans-serif;
 
 @import 'bourbon';
 
@@ -42,39 +42,74 @@ header {
 	@media only screen and (max-width: 768px) {
     	height: 65px;
   	}
-//   	.quick_contact {
-//   		position: relative;
-//   		text-align: center;
-//   		width: 100%;
-//   		height: auto;
-//   		z-index: -1;
-//   		background: rgba( $default-blue, .7);
-//   		text-transform: uppercase;
-//   		font: 90% $font-stack;
-//   		letter-spacing: 0.05em;
-//   		// padding: 1%;
-//   		// margin-top: 2%;
-//   		color: $default-white;
-//   		font-weight: bold;
-//   		h4 {
-//   			// padding: 1%;
-//   		}
-//   		ul {
-//   			list-style-type: none;
-//   			text-align: center;
-//   			// padding: 1%;
-//   			li {
-//   				text-decoration: none;
-//   				display: inline-block;
-//   				font: 90% $font-stack;
-//   				text-indent: none;
-//   				a {
-//   					text-decoration: none;
-//   					color: default-white;
-//   				}
-//   			}
-//   		}
-//   	}
+// .quick_contact {
+// 	background-image: url('stump_logo.png');
+// 	height: auto;
+// 	width: 10%;
+// 	z-index: 50;
+// 	position: fixed;
+// }
+// [class*="quick_contact"] {
+//   height: 50vh;
+
+//   text-indent: -9999px;
+
+//   /* fix background */
+//   background-attachment: fixed;
+
+//   /* center it */
+//   background-position: center center;
+
+//   /* Scale it nicely to the element */
+//   background-size: cover;
+
+//   /* just make it look a bit better ;) */
+//   &:nth-child(2n) {
+//     box-shadow: inset 0 0 1em #111;
+//   }
+// }
+
+#quick_contact {
+	width: 100%;
+
+}
+.quick_contact {
+	position: fixed;
+	width: 10%;
+	height: auto;
+	// z-index: 50;
+	// background-image: url('stump_logo.png');
+	background-attachment: fixed;
+ 	 /* center it */
+ 	background-position: center center;
+ 	 /* Scale it nicely to the element */
+ 	background-size: cover;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	// padding: 1%;
+	margin-top: 10%;
+	color: $default-white;
+	font-weight: bold;
+	ul {
+		list-style-type: none;
+		text-align: center;
+		// padding: 1%;
+		background: rgba( $default-yellow, .8 );
+		width: 100%;
+		text-indent: none;
+		padding: 1%;
+		margin: 0;
+		li {
+			font: 100% $font-stack;
+			text-decoration: none;
+			display: inline-block;
+			text-indent: none;
+			margin: 0;
+			width: 100%;
+			
+		}
+	}
+}
 
 }
 
@@ -92,7 +127,7 @@ section {
 	clear: both;
 	@include row;
 	// padding-top: 5%;
-	// font-size: 1em;
+	font-size: 1em;
 	// margin-top: 5%;
 }
 
@@ -186,4 +221,17 @@ h1 {
 .parallax {
 	z-index: 0;
 	position: relative;
+}
+
+.section_header {
+	height: 100%;
+	background: $default-dark-green;
+	font: 250% $font-header;
+	color: $default-white;
+	z-index: 100;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	padding: 1%;
 }

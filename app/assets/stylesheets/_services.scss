@@ -10,7 +10,8 @@ $default-orange: rgb(238,154,0);
 
 @import 'grid';
 
-$font-stack: Helvetica, sans-serif;
+$font-stack: 'Amaranth', sans-serif;
+$font-header: 'Bad Script', cursive;
 
 #services {
 	clear: both;
@@ -60,6 +61,7 @@ $font-stack: Helvetica, sans-serif;
 	// max-height: 100%;
 	padding: 10%;
 }
+
 
 
 
