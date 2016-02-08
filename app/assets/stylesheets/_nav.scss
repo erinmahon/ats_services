@@ -9,7 +9,42 @@ $default-white: #ffffff;
 $default-black: #000000;
 $default-orange: rgb(238,154,0);
 // FONT VARIABLE
+
 $font-stack: 'Abel', sans-serif;
+@import "bourbon";
+
+.header {
+  .menu {
+    ul {
+      padding:0;
+      margin:0;
+      li {
+        display: inline-block;
+        float: left;
+        list-style: none;
+        padding: 0 0 0 5px;
+        margin: 0;
+      }
+    }
+  }
+  .menuIcon {
+    display: none;
+    background: #000;
+    width: 100%;
+    text-align: center;
+    &:hover {
+      background: #999;
+    }
+    a {
+      width: 100%;
+      display: inline-block;
+      color: #fff;
+      img {
+        vertical-align: middle;
+      }
+    }
+  }
+}
 
 // NESTED NAV STYLING
 nav {
@@ -19,69 +54,53 @@ nav {
 	position: fixed;
 	z-index: 1;
 	margin: 2% 1%;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     margin-top: 3%;
     height: 50px;
   }
-	li {
-		display: inline-block;
-  		position: relative;
-  		a {
-  			color: $default-white;
-      		display: block;
-      		text-decoration: none;
-      	&:hover { background: $default-green; color: $default-white; text-decoration: none; }
-  		}
-	}
 	ul {
 		list-style: none;
-      	top: 100%;
-     	  background: $default-dark-green;
-      	padding: 2px;
-        // margin-left: 20%;
-        width: 100%;
-        text-align: center;
-        font: 80% $font-stack;
-        margin-left: 25%;
-        margin-top: -11%;
-        @media only screen and (max-width: 768px) {
-          margin-left: 18%;
-          margin-top: -13%;
-        }
-        // @media only screen and (max-width: 1024px) {
-        //   margin-left: 17%;
-        // }
-		li {
-			a {
-				color: $default-white;
-            border: 2px solid $default-dark-green;
-       			display: block;
-        		padding: 7px 9px;
-        		text-decoration: none;
-            @media only screen and (max-width: 768px) {
-             padding: 4px 6px;
-            }
-		  	}
-        	&:hover { 
-        		background: $default-blue; 
-        		color: $default-white; 
-        	}
-          @media only screen and (max-width: 768px) {
-            font: 70% $font-stack;
-          }
-        }
+  	// top: 100%;
+ 	  background: $default-green;
+  	padding: 2px;
+    // margin-left: 20%;
+    width: 100%;
+    text-align: center;
+    font: 80% $font-stack;
+    margin-left: 25%;
+    margin-top: -11%;
+    @media only screen and (max-width: 767px) {
+      margin-left: 18%;
+      margin-top: -13%;
+    // @media only screen and (max-width: 1024px) {
+    //   margin-left: 17%;
     }
-    &.is-selected {
-    	a { 
-    		background: $default-green; 
-    		color: $default-white; 
-    	}
-    	ul { 
-    		display: block; 
-    	}
-	}
+    li {
+      display: inline-block;
+      position: relative;
+      a {
+        color: $default-white;
+        // display: block;
+        text-decoration: none;
+        @media only screen and (max-width: 767px) {
+          padding: 5px;
+          font: 70% $font-stack;
+        }
+        &:hover { 
+          background: $default-dark-green; 
+          color: $default-white; 
+          text-decoration: none; 
+        }
+        &.is-selected {
+          background: $default-dark-green; 
+          color: $default-white; 
+        }
+      }
+    }
+  }
 }
 
+      
 // /*hamburger dropdown menu */
 
 .menu {
@@ -91,28 +110,29 @@ nav {
   }
 }
 
-.menu-btn span {
-	display: block;
-	width: 70px;
-  @media only screen and (max-width: 1024px) {
-      width: 60px;
-  }
-	height: 9px;
-	margin: 6px 0;
-
-	background: $default-green;
-	z-index: 99;
-  @media only screen and (max-width: 768px) {
-    width: 40px;
+.menu-btn {
+  span {
+  	display: block;
+  	width: 70px;
+    @media only screen and (max-width: 1024px) {
+        width: 60px;
+    }
+  	height: 9px;
+  	margin: 6px 0;
+  	background: $default-green;
+  	z-index: 99;
+    @media only screen and (max-width: 768px) {
+      width: 40px;
+      height: 6px;
+      margin: 4px 0;
+    }
     height: 6px;
-    margin: 4px 0;
+    // margin: 4px 0;
   }
-  display: block;
-  height: 6px;
-  margin: 4px 0;
 }
 .responsive-menu {
-	display: none;
+	position: relative;
+  display: none;
 }
 .expand {
 	display: block !important; 
@@ -124,4 +144,6 @@ nav {
 	float: left;
 	opacity: 0.9;
 }
+
+
 
