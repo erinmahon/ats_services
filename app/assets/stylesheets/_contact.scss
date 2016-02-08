@@ -54,9 +54,6 @@ ul {
 	list-style-type: none;
 	text-transform: uppercase;
 	font: 200% $font-header;
-	li {
-		display: block;
-	}
 }
 .contact_form {
 	@include col(8,12);
@@ -107,7 +104,7 @@ button {
 	
 }
 .form_divider {
-	width: 50%;
+	@include col(1,2);
 	float: left;
 }
 

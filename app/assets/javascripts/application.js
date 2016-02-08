@@ -73,6 +73,10 @@ $(document).ready(function() {
      	$( '.responsive-menu' )
      		.toggleClass('expand')
      })
+    $( '.menu-btn' ).mouseover(function(){
+     	$( '.responsive-menu' )
+     		.toggleClass('expand')
+     })
   })
 
 // slideshow
