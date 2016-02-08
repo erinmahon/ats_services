@@ -13,39 +13,6 @@ $default-orange: rgb(238,154,0);
 $font-stack: 'Abel', sans-serif;
 @import "bourbon";
 
-.header {
-  .menu {
-    ul {
-      padding:0;
-      margin:0;
-      li {
-        display: inline-block;
-        float: left;
-        list-style: none;
-        padding: 0 0 0 5px;
-        margin: 0;
-      }
-    }
-  }
-  .menuIcon {
-    display: none;
-    background: #000;
-    width: 100%;
-    text-align: center;
-    &:hover {
-      background: #999;
-    }
-    a {
-      width: 100%;
-      display: inline-block;
-      color: #fff;
-      img {
-        vertical-align: middle;
-      }
-    }
-  }
-}
-
 // NESTED NAV STYLING
 nav {
 	text-decoration: none;
@@ -60,10 +27,8 @@ nav {
   }
 	ul {
 		list-style: none;
-  	// top: 100%;
  	  background: $default-green;
   	padding: 2px;
-    // margin-left: 20%;
     width: 100%;
     text-align: center;
     font: 80% $font-stack;
@@ -72,15 +37,12 @@ nav {
     @media only screen and (max-width: 767px) {
       margin-left: 18%;
       margin-top: -13%;
-    // @media only screen and (max-width: 1024px) {
-    //   margin-left: 17%;
     }
     li {
       display: inline-block;
       position: relative;
       a {
         color: $default-white;
-        // display: block;
         text-decoration: none;
         @media only screen and (max-width: 767px) {
           padding: 5px;
@@ -127,7 +89,7 @@ nav {
       margin: 4px 0;
     }
     height: 6px;
-    // margin: 4px 0;
+    margin: 4px 0;
   }
 }
 .responsive-menu {
@@ -136,9 +98,6 @@ nav {
 }
 .expand {
 	display: block !important; 
-  
-  // width: 30%;
-
 }
 .mobile-nav {
 	float: left;
