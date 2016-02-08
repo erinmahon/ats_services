@@ -43,21 +43,36 @@ form {
 }
 
 .contact_info {
-	@include col(2,5);
+	@include col(4,12);
+	// float: left;
+}
+.map {
+	// @include row;
+	float: left;
+}
+ul {
+	list-style-type: none;
+	text-transform: uppercase;
+	font: 200% $font-header;
+	li {
+		display: block;
+	}
 }
 .contact_form {
-	@include col(3,5);
+	@include col(8,12);
 }
 
 .contact_logo {
-	width: 50%;
-	margin-left: 25%;
+	width: 25%;
+	
+	// float: left;
+	margin-right: 5%;
 }
 
 .section_header {
 	height: 100%;
 	background: $default-dark-green;
-	font: 250% $font-header;
+	font: 200% $font-header;
 	color: $default-white;
 	z-index: 100;
 	text-transform: uppercase;
@@ -69,6 +84,12 @@ form {
 }
 
 .call_to_action {
-	font: 300% $font-script;
+	font: 350% $font-script;
 	text-align: center;
+}
+.contact_icon {
+	width: 8%;
+}
+.contact_us {
+	padding-bottom: 2%;
 }
