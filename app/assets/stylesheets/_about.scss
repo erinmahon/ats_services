@@ -63,8 +63,8 @@ $font-bold: 'Amaranth', sans-serif;
 // }
 
 .intro_info {
-	width: 55%;
-	margin-left: 22.5%;
+	width: 70%;
+	margin-left: 15%;
 	color: $default-gray;
 	font: 120% $font-stack;
 	font-weight: lighter;
@@ -106,7 +106,7 @@ h3 {
 	font: 200% $font-stack;
 	text-align: center;
 	letter-spacing: 0.15em;
-	background: $default-dark-green;
+	background: rgba( $default-blue, .9 );
 	color: $default-white;
 	padding: 0.5%;
 }

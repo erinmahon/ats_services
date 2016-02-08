@@ -1,18 +1,18 @@
 // COLOR PALLETE VARIBALES
-$default-orange: rgb(238,154,0);
+$default-green: #0e8441;
+$default-dark-green: #193f1d;
+$default-gray: #231f20;
 $default-blue: rgb(52,73,96);
-$default-red: rgb(139,58,58);
-$default-tan: rgb(255,228,181);
-$default-green: rgb(105,139,105);
+$default-yellow: #ffd800;
 $default-white: #ffffff;
 $default-black: #000000;
-
+$default-orange: rgb(238,154,0);
 footer {
 	position: relative;
-	height: 100px;
+	height: 50px;
 	width: 100%;
 	margin: 0 auto;
-	background-color: $default-green;
+	background-color: $default-dark-green;
 	clear: both;
 	z-index: 0;
 }
