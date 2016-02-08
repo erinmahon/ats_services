@@ -71,12 +71,8 @@ $(document).ready(function() {
     $( '.menu-btn' ).click(function(){
      	$( '.responsive-menu' )
      		.toggleClass('expand')
-     })
-    $( '.menu-btn' ).mouseover(function(){
-     	$( '.responsive-menu' )
-     		.toggleClass('expand')
-     })
-  })
+   		})
+})
 
 // slideshow
 
