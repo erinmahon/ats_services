@@ -54,6 +54,9 @@ ul {
 	list-style-type: none;
 	text-transform: uppercase;
 	font: 200% $font-header;
+	@media only screen and (max-width: 1024px) {
+    	font: 175% $font-header;
+  	}
 }
 .contact_form {
 	@include col(8,12);
@@ -85,6 +88,9 @@ ul {
 }
 .contact_icon {
 	width: 7%;
+	@media only screen and (max-width: 1024px) {
+    	width: 10%;
+  	}
 }
 .contact_us {
 	padding-bottom: 2%;
@@ -100,7 +106,10 @@ button {
 	text-transform: uppercase;
 	box-shadow: 0px 0px 5px #000;
 	margin: 1%;
-	border: 4px solid $default-dark-green;
+	// border: 4px solid $default-yellow;
+	&:hover {
+		background: $default-dark-green;
+	}
 	
 }
 .form_divider {
@@ -110,5 +119,8 @@ button {
 
 .checkbox {
 	font: 110% $font-stack;
+	@media only screen and (max-width: 1024px) {
+    	font: 100% $font-header;
+    }
 }
 

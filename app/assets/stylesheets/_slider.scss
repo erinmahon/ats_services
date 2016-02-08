@@ -46,24 +46,24 @@ $default-black: #000000;
 }
 
 // MEDIA QUERY DEFINING SLIDER MARGIN-TOP @ PROGRESSIVE BREAK POINTS
-.slider {
-  @media only screen and (max-width: 768px) {
-    padding-top: 10%;
-  }
-  @media only screen and (max-width: 550px) {
-    padding-top: 15%;
-  }
-  @media only screen and (max-width: 500px) {
-    padding-top: 16%;
-  }
-  @media only screen and (max-width: 450px) {
-    padding-top: 18%;
-  }
-  @media only screen and (max-width: 400px) {
-    padding-top: 20%;
-  }
-   @media only screen and (max-width: 350px) {
-    padding-top: 25%;
-  }
+// .slider {
+//   @media only screen and (max-width: 768px) {
+//     padding-top: 10%;
+//   }
+//   @media only screen and (max-width: 550px) {
+//     padding-top: 15%;
+//   }
+//   @media only screen and (max-width: 500px) {
+//     padding-top: 16%;
+//   }
+//   @media only screen and (max-width: 450px) {
+//     padding-top: 18%;
+//   }
+//   @media only screen and (max-width: 400px) {
+//     padding-top: 20%;
+//   }
+//    @media only screen and (max-width: 350px) {
+//     padding-top: 25%;
+//   }
 
-}
+// }

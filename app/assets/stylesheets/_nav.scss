@@ -20,9 +20,9 @@ nav {
 	z-index: 1;
 	margin: 2% 1%;
   @media only screen and (max-width: 768px) {
-        margin-top: 2%;
-        height: 50px;
-      }
+    margin-top: 3%;
+    height: 50px;
+  }
 	li {
 		display: inline-block;
   		position: relative;
@@ -48,6 +48,9 @@ nav {
           margin-left: 18%;
           margin-top: -13%;
         }
+        // @media only screen and (max-width: 1024px) {
+        //   margin-left: 17%;
+        // }
 		li {
 			a {
 				color: $default-white;
@@ -91,8 +94,12 @@ nav {
 .menu-btn span {
 	display: block;
 	width: 70px;
+  @media only screen and (max-width: 1024px) {
+      width: 60px;
+  }
 	height: 9px;
 	margin: 6px 0;
+
 	background: $default-green;
 	z-index: 99;
   @media only screen and (max-width: 768px) {

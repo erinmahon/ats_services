@@ -49,7 +49,6 @@ jQuery(document).ready(function ($) {
 			$('#logo').css({
 			width: '10%',
 			float: 'right',
-			margin: '0% 2% -5% 0%'
 			});
 
 		}
