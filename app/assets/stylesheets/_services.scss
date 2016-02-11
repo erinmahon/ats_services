@@ -13,22 +13,6 @@ $default-orange: rgb(238,154,0);
 $font-stack: 'Amaranth', sans-serif;
 $font-script: 'Bad Script', cursive;
 
-$break-medium: 768px;
-// $break-large: 1200px;
-
-// .profile-pic {
-//   float: left;
-//   width: 250px;
-//   @media screen and (max-width: $break-small) {
-//     width: 100px;
-//     float: none;
-//   }
-//   @media screen and (min-width: $break-large) {
-//     float: right;
-//   }
-// }
-
-
 #services {
 	@include row;
 	clear: both;
@@ -36,20 +20,48 @@ $break-medium: 768px;
 	@media only screen and (max-width: 1024px) {
     	margin-top: 15%;
   	}
-  	@media only screen and (max-width: 1024px) {
+  	@media only screen and (max-width: 840px) {
+    	margin-top: 12%;
+  	}
+	@media only screen and (max-width: 750px) {
+    	margin-top: 5%;
+  	}
+  	@media only screen and (max-width: 660px) {
+    	margin-top: 1%;
+  	}
+  	@media only screen and (max-width: 660px) {
+    	margin-top: -3%;
+  	}
+  	@media only screen and (max-width: 550px) {
+    	margin-top: -10%;
+  	}
+  	@media only screen and (max-width: 500px) {
     	margin-top: -15%;
+  	}
+  	@media only screen and (max-width: 450px) {
+    	margin-top: -25%;
+  	}
+  	@media only screen and (max-width: 405px) {
+    	margin-top: -30%;
+  	}
+  	@media only screen and (max-width: 380px) {
+    	margin-top: -35%;
+  	}
+  	@media only screen and (max-width: 360px) {
+    	margin-top: -40%;
+  	}
+  	@media only screen and (max-width: 340px) {
+    	margin-top: -50%;
+  	}
+  	@media only screen and (max-width: 310px) {
+    	margin-top: -60%;
   	}
 	background: $default-white;
 	box-shadow: 0px 0px 110px #000;
-	// height: 100%;
-	// position: relative;
-	// clear: both;
-	// padding: 5%;
-	// margin-top: 45%;
 	z-index: 1;
 	width: 100%;
 	.services_list {
-		// background: $default-white;
+		background: $default-white;
 		@include col(12,12);
 		color: black;
 		// border: 2px solid black;
@@ -66,16 +78,17 @@ $break-medium: 768px;
 			color: $default-white;
 			li {
 				@include col(1,5);
-				@media only screen and (max-width: 768px) {
-    				width: 40%;
+				@media only screen and (max-width: 500px) {
+    				background-color: green;
   				}
-  				@media only screen and (max-width: 525px) {
-    				width: 100%;
+				@media only screen and (max-width: 874px) {
+    				width: 40%;
+    				margin: 2%;
   				}
 				list-style-type: none;
 				// border: 5px solid $default-blue;
 				float: left;
-				width: 100%;
+				// width: 100%;
 				height: 300px;
 				@media only screen and (max-width: 1024px) {
     				height: 230px;
@@ -83,13 +96,11 @@ $break-medium: 768px;
   				@media only screen and (max-width: 1024px) {
     				height: 210px;
   				}
-  				@media only screen and (max-width: 768px) {
+  				@media only screen and (max-width: 767px) {
     				height: 200px;
   				}
-  				@media only screen and (max-width: 768px) {
+  				@media only screen and (max-width: 767px) {
     				width: 40%;
-
-
   				}
 				padding: 2%;
 				margin: 2%;
@@ -109,10 +120,12 @@ $break-medium: 768px;
 	}
 }
 .symbol {
+	height: auto;
 	width: 100%;
 	// max-height: 100%;
-	padding: 10%;
-	@media only screen and (max-width: 768px) {
+	padding: 5%;
+	// float: left;
+	@media only screen and (max-width: 874px) {
     	width: auto;
     	height: 95%;
     	padding: 5%;
@@ -122,7 +135,16 @@ $break-medium: 768px;
     	height: 85%;
     	padding: 5%;
     }
+    @media only screen and (max-width: 569px) {
+    	width: auto;
+    	height: 70%;
+    	margin-top: 1%;
+    	padding: 2%;
+    }
 }
+
+
+
 
 
 

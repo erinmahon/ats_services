@@ -63,7 +63,7 @@ $(document).ready(function() {
 	jQuery(function(){
 		$( '.menu-btn' ).click(function(){
 			$('.responsive-menu').toggleClass('expand')
-			$('span').css('background-color', 'darkgreen')
+			// $('span').css('background-color', 'darkgreen')
 			})
 		})
 		

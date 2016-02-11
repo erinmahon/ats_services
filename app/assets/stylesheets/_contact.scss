@@ -57,6 +57,12 @@ ul {
 	@media only screen and (max-width: 1024px) {
     	font: 175% $font-header;
   	}
+  	li {
+  		a, &:hover, &.is-selected {
+  		color: $default-green;
+  		text-decoration: none;
+  		}
+  	}
 }
 .contact_form {
 	@include col(8,12);

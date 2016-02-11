@@ -38,6 +38,9 @@ header {
 	background: rgba( $default-blue, .7);
 	border: 4px solid $default-dark-green;
 	height: 100px;
+	@media only screen and (max-width: 600px) {
+    	height: 70px;
+  	}
 	width: 100%;
 	margin: 0 auto;
 	position: fixed;
