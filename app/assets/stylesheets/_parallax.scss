@@ -1,37 +1,31 @@
-// setting base styles to image containers
+// SET BASE STYLES TO IMAGE CONATINERS
 [class*="bg__"] {
   height: 50vh;
 
   text-indent: -9999px;
 
-  /* fix background */
+// FIX, CENTER & SCALE BACKGROUND TO ELEMENT
   background-attachment: fixed;
-
-  /* center it */
   background-position: center center;
-
-  /* Scale it nicely to the element */
   background-size: cover;
 
-  /* just make it look a bit better ;) */
+// ADD INSET DROP SHADOW FOR STYLING
   &:nth-child(2n) {
     box-shadow: inset 0 0 1em #111;
   }
 }
 
-.bg__foo {
-  // background-image: url('bark_texture.jpg');
-}
-
-.bg__bar {
+// DEFINE PARALLAX SECTIONS
+// .bg__first {
+//   // background-image: url('bark_texture.jpg');
+// }
+.bg__second {
   background-image: url('tree_trunk.jpg');
 }
-
-.bg__baz {
-  background-image: url('orange_bark.jpg');
-}
-
-.bg__bazz {
+// .bg__third {
+//   background-image: url('orange_bark.jpg');
+// }
+.bg__last {
   height: 80vh;
   opacity: 0.8;
   background-image: url('adam_tree.png');

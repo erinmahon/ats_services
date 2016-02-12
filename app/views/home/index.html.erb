@@ -1,13 +1,25 @@
+<!-- DEFINE PARALLEX ONE PAGE VIEW -->
+
+<!-- REDNER HEADER PARTIAL VIEW -->
 <%= render 'home/header' %>
+<!-- RENDER SLIDER PARTIAL VIEW -->
 <%= render 'home/slider' %>
+<!-- INCORPORATE PARALLAX PARTIAL VIEW -->
 <div class="parallax">
-    <div class="bg__foo">foo</div>
+	<!-- RENDER FIRST SECTION OF PARALLAX PARTIAL VIEW -->
+    <div class="bg__first"></div>
+    <!-- RENDER SERVICES PARTIAL VIEW -->
     <%= render 'services/services' %>
-    <div class="bg__bar">bar</div>
+    <!-- RENDER SECOND SECTION OF PARALLAX PARTIAL VIEW -->
+    <div class="bg__second"></div>
+    <!-- RENDER ABOUT PARTIAL VIEW -->
 	<%= render 'about/about' %>
-    <!-- <div class="bg__baz">baz</div> -->
-    <div class="bg__bazz">bazz</div>
+	<!-- RENDER THIRD SECTION OF PARALLAX PARTIAL VIEW -->
+    <!-- <div class="bg__third"></div> -->
+    <div class="bg__last"></div>
+    <!-- RENDER CONTACT PARTIAL VIEW -->
     <%= render 'contact/contact' %>
+    <!-- RENDER HOME PARTIAL VIEW -->
     <%= render 'home/footer' %>
  </div>
 

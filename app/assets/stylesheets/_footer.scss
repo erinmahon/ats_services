@@ -7,6 +7,10 @@ $default-yellow: #ffd800;
 $default-white: #ffffff;
 $default-black: #000000;
 $default-orange: rgb(238,154,0);
+
+// FONT VARIABLES
+$font-stack: 'Abel', sans-serif;
+
 footer {
 	position: relative;
 	height: 50px;
@@ -15,4 +19,10 @@ footer {
 	background-color: $default-dark-green;
 	clear: both;
 	z-index: 0;
+}
+
+.footer {
+	color: $default-white;
+	text-align: center;
+	font: 100% $font-stack;
 }

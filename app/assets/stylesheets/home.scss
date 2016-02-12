@@ -14,7 +14,7 @@ $default-orange: rgb(238,154,0);
 
 
 
-// FONT VARIABLE
+// FONT VARIABLES
 $font-stack: 'Abel', sans-serif;
 $font-header: 'Open Sans Condensed', sans-serif;
 $font-script: 'Bad Script', cursive;
@@ -34,6 +34,7 @@ $font-script: 'Bad Script', cursive;
 body {
 	// background: tint( $default-black, 30% );
 }
+
 header {
 	background: rgba( $default-blue, .7);
 	border: 4px solid $default-dark-green;

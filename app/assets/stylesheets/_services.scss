@@ -78,13 +78,17 @@ $font-script: 'Bad Script', cursive;
 			color: $default-white;
 			li {
 				@include col(1,5);
-				@media only screen and (max-width: 500px) {
-    				background-color: green;
-  				}
 				@media only screen and (max-width: 874px) {
     				width: 40%;
     				margin: 2%;
-  				}
+          }
+          @media only screen and (max-width: 500px) {
+            width: 100px;
+            height: auto;
+            background-color: white;
+            display: inline;
+            color: green;
+            }
 				list-style-type: none;
 				// border: 5px solid $default-blue;
 				float: left;
