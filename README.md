@@ -10,5 +10,6 @@ This web application is a business website for ATS Tree Services, LLC. Built usi
 	<li>Responsive design for desktop, tablet & mobile devices</li>
 </ul>
 
-Preview:
-![Uploading Screen Shot 2016-02-12 at 1.19.46 PM.png…]()
+<h3>Preview:</h3>
+
+<img width="1430" alt="screen shot 2016-02-12 at 1 19 46 pm" src="https://cloud.githubusercontent.com/assets/14220315/13016274/a9dbf27a-d18b-11e5-8714-193ba6c860f1.png">
